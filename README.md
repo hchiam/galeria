@@ -37,7 +37,8 @@ remote server:
 
 ## Setting up a database for the app:
 
-1. `git checkout -b pg origin/pg` ("pg" = PostgreSQL database for Ruby as required by Heroku)
+1. `git checkout -b pg origin/pg` (to create branch "pg" = PostgreSQL database for Ruby as required by Heroku)
+    * or `git checkout origin/pg`
 2. (postgresql: http://postgresapp.com/ or http://www.postgresql.org/download/windows/ or http://www.postgresql.org/download/linux/ubuntu/)
 3. `bundle install` (to check the ActiveRecord gem that translates ruby to sql is stable locally)
 4. `ruby app.rb`
