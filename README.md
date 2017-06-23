@@ -49,5 +49,7 @@ remote server:
 10. `git branch` (check on pg branch)
 11. `git push heroku HEAD:master`
 12. `heroku open` (should get internal server error)
-13. `heroku run rake db:migrate`
-14. 
+13. `heroku run rake db:migrate` (should get error cannot find database connection b/c no postgresql addon included in heroku)
+14. `heroku addons:create heroku-postgresql` (to include the postgresql addon)
+15. `heroku run heroku run rake db:migrate` (to try database migrations again in the heroku server)
+16. (refresh page)
