@@ -20,3 +20,7 @@ Used a Udacity course.
 14. `git remote rm heroku`
 15. `heroku git:remote -a my-galeria`
 16. `heroku open` (should take you to https://my-galeria.herokuapp.com/)
+
+## Staging = mock test; Deploying = final production push
+
+https://devcenter.heroku.com/articles/multiple-environments
