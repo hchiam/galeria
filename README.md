@@ -24,3 +24,20 @@ Used a Udacity course.
 ## Staging = mock test; Deploying = final production push
 
 https://devcenter.heroku.com/articles/multiple-environments
+
+## Setting up a database for the app:
+
+1. `git checkout -b pg origin/pg` ("pg" = PostgreSQL database for Ruby as required by Heroku)
+2. (postgresql: http://postgresapp.com/ or http://www.postgresql.org/download/windows/ or http://www.postgresql.org/download/linux/ubuntu/)
+3. `bundle install` (to check the ActiveRecord gem that translates ruby to sql is stable locally)
+4. `ruby app.rb`
+5. (visit localhost:4567 to see a Sinatra error)
+6. (shut down server)
+7. `rake db:migrate` (to create database table)
+8. `ruby app.rb`
+9. (localhost:4567)
+10. `git branch` (check on pg branch)
+11. `git push heroku HEAD:master`
+12. `heroku open` (should get internal server error)
+13. `heroku run rake db:migrate`
+14. 
