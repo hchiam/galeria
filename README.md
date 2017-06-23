@@ -19,5 +19,4 @@ Used a Udacity course.
 13. (I changed my app’s URL/name to "my-galeria" at https://dashboard.heroku.com/)
 14. `git remote rm heroku`
 15. `heroku git:remote -a my-galeria`
-16. `heroku open`
-17. (should take you to https://my-galeria.herokuapp.com/)
+16. `heroku open` (should take you to https://my-galeria.herokuapp.com/)
