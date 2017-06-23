@@ -25,6 +25,16 @@ Used a Udacity course.
 
 https://devcenter.heroku.com/articles/multiple-environments
 
+## Local computer vs remote server
+
+local computer:
+
+`<command>`
+
+remote server:
+
+`heroku run <command>`
+
 ## Setting up a database for the app:
 
 1. `git checkout -b pg origin/pg` ("pg" = PostgreSQL database for Ruby as required by Heroku)
